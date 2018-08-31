@@ -122,3 +122,5 @@ D:\Training\VS2017\GigHub\GigHub\GigHub\obj\Debug\GigHub.dll
 D:\Training\VS2017\GigHub\GigHub\GigHub\obj\Debug\GigHub.pdb
 D:\Training\VS2017\GigHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.InitialModel.resources
 D:\Training\VS2017\GigHub\GigHub\GigHub\obj\Debug\GigHub.csproj.GenerateResource.cache
+D:\Training\VS2017\GigHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.CreateGigTable.resources
+D:\Training\VS2017\GigHub\GigHub\GigHub\obj\Debug\GigHub.Migrations.OverrideConventionsForGigsAndGenres.resources
