@@ -199,6 +199,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\GigController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -206,8 +207,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AttendancesController.cs" />
-    <Compile Include="Controllers\FollowingsController.cs" />
+    <Compile Include="Api\AttendancesController.cs" />
+    <Compile Include="Api\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -248,6 +249,14 @@
     <Compile Include="Migrations\201809281753340_AddFollowing.Designer.cs">
       <DependentUpon>201809281753340_AddFollowing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809291003431_AddIsCanceledToGig.cs" />
+    <Compile Include="Migrations\201809291003431_AddIsCanceledToGig.Designer.cs">
+      <DependentUpon>201809291003431_AddIsCanceledToGig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809291338565_AddNotification.cs" />
+    <Compile Include="Migrations\201809291338565_AddNotification.Designer.cs">
+      <DependentUpon>201809291338565_AddNotification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -257,6 +266,9 @@
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\NotificationType.cs" />
+    <Compile Include="Models\UserNotification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\FutureDate.cs" />
@@ -273,6 +285,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -366,6 +379,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809281753340_AddFollowing.resx">
       <DependentUpon>201809281753340_AddFollowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809291003431_AddIsCanceledToGig.resx">
+      <DependentUpon>201809291003431_AddIsCanceledToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809291338565_AddNotification.resx">
+      <DependentUpon>201809291338565_AddNotification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
