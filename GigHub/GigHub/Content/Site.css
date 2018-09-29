@@ -23,10 +23,17 @@ textarea {
     max-width: 280px;
 }
 
-span.field-validation-error {
+.field-validation-error {
     color: red;
     font-weight: bold;
 }
+
+.voffset { margin-top: 2px }
+.voffset1 { margin-top: 5px }
+.voffset2 { margin-top: 10px }
+.voffset3 { margin-top: 20px }
+.voffset4 { margin-top: 40px }
+.voffset5 { margin-top: 80px }
 
 /* Bootstrap Overrides*/
 
@@ -43,13 +50,15 @@ span.field-validation-error {
     color: #fff;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: rgba(205, 40, 39, 0.55);
-}
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: #ff4342;
+        background-color: rgba(205, 40, 39, 0.55);
+    }
 
 .dropdown-menu {
-    box-shadow: none;
     -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
@@ -94,8 +103,9 @@ h6,
 
 .form-control:focus {
     border-color: #2196f3;
-    box-shadow: none;
+    -moz-box-shadow: none;
     -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .btn {
